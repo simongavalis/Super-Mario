@@ -152,7 +152,7 @@ body {
 				game.time.events.add(Phaser.Timer.SECOND, function() {
 					goomba.kill();
 					shredderkill_count += 1;
-						shredderkill.text = 'Shredders Killed: ' + (score_count+shredderkill_count) ;
+						shredderkill.text = 'Shredders Killed: ' + (shredderkill_count) ;
 				});
 			} else {
 				player.frame = 6;
