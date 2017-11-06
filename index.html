@@ -13,8 +13,10 @@ body {
 <script src="//cdn.jsdelivr.net/phaser/2.6.2/phaser.min.js"></script>
 </head>
 <body>
-	<audio autoplay loop>
+
+<audio autoplay loop>
         <source src="assets/tmnt.mp3" type="audio/mp3">
+</audio>	
 	<script type="text/javascript">
 		
 		var score_count = 0;
@@ -133,7 +135,7 @@ body {
 
 		function coinOverlap(player, coin) {
 			coin.kill();
-			score_count += 100;
+			score_count = score_count + 100;
 				score.text='Total score: ' + (score_count);
 			
 		}
