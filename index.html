@@ -135,8 +135,8 @@ body {
 
 		function coinOverlap(player, coin) {
 			coin.kill();
-			score_count = score_count + 100;
-				score.text='Total score: ' + (score_count);
+			score_count += 100;
+				score.text='Total score: ' + score_count;
 			
 		}
 
@@ -148,7 +148,7 @@ body {
 				player.body.velocity.y = -80;
 				game.time.events.add(Phaser.Timer.SECOND, function() {
 					goomba.kill();
-					shredderkill_count = shredderkill_count + 1;
+					shredderkill_count += 1;
 						shredderkill.text = 'You killed Shredder ' + (shredderkill_count) + ' times' ;
 				});
 			} else {
