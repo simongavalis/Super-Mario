@@ -94,13 +94,13 @@ body {
 
 			cursors = game.input.keyboard.createCursorKeys();
 			
-			score = game.add.text(50,0,'Total Score: 0',{font: '20px   Lucida Sans Unicode',  fill: '#000000'});
+			score = game.add.text(0,0,'Total Score: 0',{font: '20px   Lucida Sans Unicode',  fill: '#000000'});
 			score.fixedToCamera = true;
-			score.cameraOffset.setTo(50, 0);
+			score.cameraOffset.setTo(0, 0);
 			
-			shredderkill = game.add.text(500,0,'Shredders Killed: 0', {font: '20px Lucida Sans Unicode',  fill: '#000000'});
+			shredderkill = game.add.text(50,0,'Shredders Killed: 0', {font: '20px Lucida Sans Unicode',  fill: '#000000'});
 			shredderkill.fixedToCamera = true;
-			shredderkill.cameraOffset.setTo(500,0);
+			shredderkill.cameraOffset.setTo(50,0);
 		}
 
 		function update() {
@@ -144,7 +144,7 @@ body {
 		function coinOverlap(player, coin) {
 			coin.kill();
 			score_count += 100;
-				score.text='Total score: ' + (score_count+shredderkill_count);
+				score.text='Total score: ' + (score_count);
 			
 		}
 
